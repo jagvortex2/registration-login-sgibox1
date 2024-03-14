@@ -40,6 +40,12 @@ public class AuthController {
     }
 
 
+    //Handler method to redirect to dashborad after a successfull login
+    public String loginSuccess(){
+        return "redirect:/dashboard";
+    }
+
+
     //Handler method to handle user registration form request
     @GetMapping("/register")
     public String showRegistrationForm(Model model){
